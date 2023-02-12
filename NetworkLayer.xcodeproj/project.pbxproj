@@ -23,6 +23,8 @@
 		012DE9162051C21800EE152D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DE9152051C21800EE152D /* Movie.swift */; };
 		012DE91B2055400200EE152D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DE91A2055400200EE152D /* NetworkManager.swift */; };
 		012DE91D205541C000EE152D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012DE91C205541C000EE152D /* NetworkLogger.swift */; };
+		428FA5382998AF7A004988F2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FA5372998AF7A004988F2 /* HomeViewModel.swift */; };
+		428FA53B2999112B004988F2 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FA53A2999112B004988F2 /* ResponseHandler.swift */; };
 		A0CDCF862993CB3D00A2010A /* jsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CDCF852993CB3D00A2010A /* jsonModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		012DE9152051C21800EE152D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		012DE91A2055400200EE152D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		012DE91C205541C000EE152D /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		428FA5372998AF7A004988F2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		428FA53A2999112B004988F2 /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
 		A0CDCF852993CB3D00A2010A /* jsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +144,7 @@
 		011B4C79204DB05C00A0691C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				428FA5392998AFA2004988F2 /* Decode */,
 				0118F1492050537800F62D31 /* EndPoint */,
 				012DE91720553FE400EE152D /* Manager */,
 				0118F14D2050595300F62D31 /* Service */,
@@ -188,9 +193,34 @@
 		01606771205E9412002E4024 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				011B4C5B204DB03D00A0691C /* MainViewController.swift */,
+				428FA5352998AF51004988F2 /* HomeViewController */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		428FA5352998AF51004988F2 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				428FA5362998AF68004988F2 /* ViewModel */,
+				011B4C5B204DB03D00A0691C /* MainViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		428FA5362998AF68004988F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				428FA5372998AF7A004988F2 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		428FA5392998AFA2004988F2 /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				428FA53A2999112B004988F2 /* ResponseHandler.swift */,
+			);
+			path = Decode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +338,8 @@
 				011B4C5A204DB03D00A0691C /* AppDelegate.swift in Sources */,
 				A0CDCF862993CB3D00A2010A /* jsonModel.swift in Sources */,
 				012DE9162051C21800EE152D /* Movie.swift in Sources */,
+				428FA53B2999112B004988F2 /* ResponseHandler.swift in Sources */,
+				428FA5382998AF7A004988F2 /* HomeViewModel.swift in Sources */,
 				0118F14B2050539F00F62D31 /* MovieEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
